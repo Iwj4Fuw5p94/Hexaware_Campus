@@ -1,0 +1,183 @@
+@import '/node_modules/font-awesome/css/font-awesome.css';
+
+.super-container{
+    height: 100vh;
+    background-color: rgb(247, 239, 255);
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.listing-container{
+    background-color: white;
+    border-radius: 10px;
+    width: 66%;
+    border: 1px solid rgb(180, 180, 180);
+}
+.listing-companyName{
+    font-weight: 600;
+}
+.listing-department{
+    color: rgb(123, 123, 123);
+    font-weight: 500;
+}
+.listing-title{
+    font-weight: 500;
+    font-size: 23px;
+}
+.listing-icon-container{
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    font-size: 17px;
+    gap: 7px;
+    color: rgb(91, 91, 91);
+}
+
+.listing-status-open,.listing-status-closed{
+    border-radius: 5px;
+    width: fit-content;
+}
+.listing-status-open{
+    background-color: rgb(149, 255, 149);
+    color: green;
+}
+.listing-status-closed{
+    background-color: rgb(255, 141, 141);
+}
+.cells{
+    background-color: rgb(213, 235, 255);
+    width: fit-content;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: rgb(103, 103, 103);
+    font-size: medium;
+}
+.btn-container{
+    width: 100%;
+    display: flex;
+    padding: 2px 14px;
+    justify-content: center;
+}
+.about-title{
+    font-size: 20px;
+}
+.job-description{
+    font-size: 17px;
+}
+@media only screen and (max-width: 1200px){
+    .listing-container{
+        width: 70%;
+    }
+    .listing-title{
+        font-size: 23px;
+    }
+    .listing-department{
+        font-size: 19px;
+    }
+    .listing-icon-container{
+        margin: 3px 0;
+        font-size: 17px;
+        gap: 7px;
+    }
+}
+@media only screen and (max-width: 992px){
+    .listing-container{
+        width: 80%;
+    }
+    .listing-title{
+        font-size: 23px;
+    }
+    .listing-department{
+        font-size: 19px;
+    }
+    .listing-icon-container{
+        margin: 3px 0;
+        font-size: 17px;
+        gap: 7px;
+    }
+    .about-title{
+        font-size: larger;
+    }
+    .job-description{
+        font-size: 16px;
+    }
+    .cells{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width: 768px){
+    .listing-container{
+        width: 90%;
+    }
+    .listing-title{
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .listing-department{
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .listing-icon-container{
+        font-size: 17px;
+        gap: 3px;
+    }
+    .listing-body-contents{
+        font-size: medium;
+        margin: 2px;
+    }
+    .listing-footer{
+        font-size: medium;
+    }
+    .btn-container{
+        justify-content: center;
+    }
+    .about-title{
+        font-size: larger;
+    }
+    .job-description{
+        font-size: 17px;
+    }
+    .cells{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width: 576px){
+
+    .listing-container{
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+    }
+    .listing-title{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .listing-department{
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(123, 123, 123);
+    }
+    .listing-icon-container{
+        margin-top: 9px;
+        gap: 4px;
+    }
+    .listing-body-contents{
+        font-size: smaller;
+        margin: 2px;
+    }
+    .listing-footer{
+        font-size: smaller;
+    }
+    .about-title{
+        font-size: large;
+    }
+    .job-description{
+        font-size: 14px;
+    }
+    .cells{
+        font-size: smaller;
+    }
+}

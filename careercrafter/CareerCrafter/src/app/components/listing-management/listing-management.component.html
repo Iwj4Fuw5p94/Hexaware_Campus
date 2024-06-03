@@ -1,0 +1,46 @@
+<div class="parent-container">
+  <div class="sub-parent-container mx-auto container text-center m-0 p-0">
+    <h2 class="heading">Listings</h2>
+    <div class="search-bar container justify-content-end">
+      <div class="input-group search-input-container">
+        <div class="input-group rounded">
+          <input type="search" class="form-control rounded" [(ngModel)]="filterProfile" placeholder="Search Profile by Keyword" aria-label="Search" aria-describedby="search-addon" />
+          <span class="input-group-text bg-primary border-0" id="search-addon" (click)="filter()" >
+            <i class="fa fa-search text-white" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+        <div class="input-group search-input-container">
+          <div class="input-group rounded">
+            <button class="btn btn-success" routerLink="/post-listing">Post a New Job</button>
+          </div>
+        </div>
+    </div>
+    <table class="table bg-white table-striped shadow">
+        <thead class="table-header">
+          <tr>
+            <th scope="col">S.No</th>
+            <th scope="col">Profile</th>
+            <th scope="col">Post Date</th>
+            <th scope="col">Department</th>
+            <th scope="col">Experience</th>
+            <th scope="col">Status</th>
+            <th scope="col">Check Applications</th>
+            <th scope="col">Change Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let listing of listingList; let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{listing.profile}}</td>
+            <td>{{listing.postDate}}</td>
+            <td>{{listing.department}}</td>
+            <td>{{listing.experienceReqFrom}}-{{listing.experienceReqTo}}</td>
+            <td>{{listing.listingStatus}}</td>
+            <td><div class="btn btn-success" (click)="checkApplications(listing.listingId)">Check Applications</div></td>
+            <td><div class="btn btn-warning text-white" (click)="closeListing(listing.listingId)">Change Status</div></td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</div>

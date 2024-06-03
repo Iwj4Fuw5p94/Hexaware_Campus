@@ -1,0 +1,190 @@
+@import '/node_modules/font-awesome/css/font-awesome.css';
+
+.super-container{
+    height: max-content;
+    background-color: rgb(247, 239, 255);
+}
+
+.listing-container{
+    border-radius: 10px;
+    width: 70%;
+    border: 1px solid rgb(180, 180, 180);
+}
+.listing-companyName{
+    font-weight: 600;
+}
+.listing-department{
+    color: rgb(123, 123, 123);
+    font-weight: 500;
+}
+.listing-title{
+    font-weight: 500;
+    font-size: 23px;
+}
+.listing-icon-container{
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    font-size: 17px;
+    gap: 7px;
+}
+.listing-status-open,.listing-status-closed{
+    border-radius: 5px;
+    width: fit-content;
+}
+.listing-status-open{
+    background-color: rgb(149, 255, 149);
+    color: green;
+}
+.listing-status-closed{
+    background-color: rgb(255, 141, 141);
+}
+.filter-super-container{
+    position: relative;
+}
+.filter-container{
+    border: 1px solid grey;
+    width: 75%;
+    height: fit-content;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+.departmentFilter,.roleFilter,.locationFilter{
+    width: 270px;
+    margin: 5px 0;
+}
+.filter-icon-container{
+    width: fit-content;
+    font-weight: 500;
+    color: rgb(96, 96, 96);
+    font-size: large;
+}
+.filter select{
+    border: 1px solid rgb(160, 160, 160);
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+@media only screen and (max-width: 1200px){
+    .listing-container{
+        width: 70%;
+    }
+    .listing-title{
+        font-size: 23px;
+    }
+    .listing-department{
+        font-size: 19px;
+    }
+    .listing-icon-container{
+        margin: 3px 0;
+        font-size: 17px;
+        gap: 7px;
+    }
+    .filter-icon-container{
+        font-size: medium;
+    }
+    .filter-container{
+        width: 90%;
+    }
+    .departmentFilter,.roleFilter,.locationFilter{
+        width: 190px;
+        margin: 5px 0;
+    }
+    .apply-btn{
+        font-size: smaller;
+        width: 20%;
+        padding: 4px 0;
+    }
+}
+@media only screen and (max-width: 992px){
+    .listing-container{
+        width: 80%;
+    }
+    .listing-title{
+        font-size: 23px;
+    }
+    .listing-department{
+        font-size: 19px;
+    }
+    .listing-icon-container{
+        margin: 3px 0;
+        font-size: 17px;
+        gap: 7px;
+    }
+    .apply-btn{
+        font-size: smaller;
+        width: 20%;
+        padding: 4px 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    .listing-container{
+        width: 90%;
+    }
+    .listing-title{
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .listing-department{
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .listing-icon-container{
+        font-size: 17px;
+        gap: 3px;
+    }
+    .listing-body-contents{
+        font-size: medium;
+        margin: 2px;
+    }
+    .listing-footer{
+        font-size: medium;
+    }
+    .apply-btn{
+        font-size: medium;
+        width: 30%;
+        padding: 2px 0;
+    }
+}
+@media only screen and (max-width: 576px){
+
+    .listing-container{
+        width: 90%;
+        border-radius: 10px;
+    }
+    .listing-title{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .listing-department{
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(123, 123, 123);
+    }
+    .listing-icon-container{
+        gap: 3px;
+    }
+    .listing-body-contents{
+        font-size: smaller;
+        margin: 2px;
+    }
+    .listing-footer{
+        font-size: smaller;
+    }
+    .apply-btn{
+        font-size: smaller;
+        width: 30%;
+        padding: 2px 0;
+    }
+}
